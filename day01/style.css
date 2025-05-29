@@ -13,6 +13,10 @@ body {
   background-color: #ddd;
 }
 
+#button.stop-color {
+  background-color: tomato;
+}
+
 .stopwatch {
   padding: 48px 32px 72px;
   background-color: #fff;
@@ -25,7 +29,7 @@ body {
   font-size: 0.4em;
   display: block;
   margin-bottom: 16px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   text-transform: uppercase;
   color: grey;
 }
@@ -38,13 +42,13 @@ body {
 #screen {
   background-color: black;
   color: #fff;
-  font-family: "Press Start 2P", system-ui;
+  font-family: 'Press Start 2P', system-ui;
   padding: 8px 10px;
   border-radius: 2px;
 }
 
 #button {
-  background-color: rgb(50, 50, 199);
+  background-color: steelblue;
   color: #fff;
   padding: 5px 10px;
   border-radius: 2px;
