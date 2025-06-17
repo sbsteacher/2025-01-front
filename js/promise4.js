@@ -22,6 +22,8 @@ function fnC(item) {
     }, 2000);
 }
 
+
+
 fnA().then( item => fnB(item) )
      .then( item => fnC(item) );
 
