@@ -12,7 +12,24 @@
     <button id="prgStartBtn" type="button">시작</button>
     <br><br>
     <h2>meter 태그</h2>
-    <meter min="0" max="100" value="20" low="33" high="67" optimum="33">20달러</meter>
+    <!-- 
+      meter 태그 내의 텍스트는 (아래 기준으로 "20달러") 접근 가능한 레이블이 아니며,
+      meter 태그를 지원하지 않는 오래된 브라우저에 대한 대안으로만 사용
+      알려진 범위 내의 정량적인 측정값 또는 분수 값에만 사용
+
+      low : 하한값 (하한 경계를 구분 지음)
+      high : 상한값 (상한 경계를 구분 지음)
+      optimum : 게이지의 최적의 지점을 나타내는 숫자
+      하한값 아래, 상한값 위는 노란색 표시
+      하한값 위, 상한값 아래는 초록색 표시
+    -->
+    <meter min="0" max="100" value="20" low="30" high="70" optimum="50" title="달러">20달러</meter>
+    <meter min="0" max="100" value="40" low="30" high="70" optimum="50" title="달러">40달러</meter>
+    <meter min="0" max="100" value="60" low="30" high="70" optimum="50" title="달러">50달러</meter>
+    
+    <meter min="0" max="100" value="80" low="30" high="70" optimum="50" title="달러">50달러</meter>
+    <meter min="0" max="1" value="0.8" low="0.6" high="0.7" title="달러">80달러</meter>
+    
     <script>
         const $progressBar = document.querySelector('#progressBar');
         const $prgStartBtn = document.querySelector('#prgStartBtn');
